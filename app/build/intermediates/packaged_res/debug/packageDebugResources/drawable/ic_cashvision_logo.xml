@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Camera lens outer ring -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,54m-35,0a35,35 0,1 1,70 0a35,35 0,1 1,-70 0" />
+    
+    <!-- Camera lens inner -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M54,54m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0" />
+    
+    <!-- Dollar sign -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,35 L54,30 M54,78 L54,73 M49,40 Q49,35 54,35 Q59,35 59,40 L59,45 Q59,50 54,50 L49,50 Q49,55 49,60 Q49,65 54,65 Q59,65 59,60"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+    
+    <!-- Camera flash indicator -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M75,25 L80,20 L85,25 L80,35 Z" />
+</vector>

@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24'
+    }
+}
+
+ext {
+    JVM_TARGET = '17'
+}
+
+allprojects {
+    // Fuerza Kotlin a compilar a JVM 17 en todos los subproyectos
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            jvmTarget = JVM_TARGET
+        }
+    }
+
+    // Alinea las tareas de Java/Javac a 17
+    tasks.withType(JavaCompile).configureEach {
+        sourceCompatibility = JVM_TARGET
+        targetCompatibility = JVM_TARGET
+        // options.release = 17 // (opcional) si no usas Android plugin
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

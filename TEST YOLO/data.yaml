@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['1000', '10000', '2000', '20000', '5000']
+
+roboflow:
+  workspace: data-xd51o
+  project: my-first-project-qc8wn
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/data-xd51o/my-first-project-qc8wn/dataset/4

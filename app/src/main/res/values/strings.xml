@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CashVision</string>
+
+    <!-- Button texts -->
+    <string name="btn_flashlight">Linterna</string>
+    <string name="btn_flashlight_off">Apagar</string>
+    <string name="btn_detection">Detectar</string>
+    <string name="btn_detection_off">Parar</string>
+
+    <!-- Status messages -->
+    <string name="status_camera_ready">Cámara lista - Toca Detectar para iniciar</string>
+    <string name="status_camera_error">Error al inicializar la cámara</string>
+    <string name="status_flashlight_on">Linterna encendida</string>
+    <string name="status_flashlight_off">Linterna apagada</string>
+    <string name="status_no_flashlight">Este dispositivo no tiene linterna</string>
+    <string name="status_tap_flashlight">Toca para encender la linterna</string>
+    <string name="status_detection_on">Detección activa</string>
+    <string name="status_detection_off">Detección pausada</string>
+    <string name="status_model_loading">Cargando modelo YOLO...</string>
+    <string name="status_model_error">Error al cargar modelo</string>
+    <string name="status_detecting">Detectando billetes...</string>
+
+    <!-- Accessibility -->
+    <string name="content_desc_flashlight">Botón de linterna</string>
+    <string name="content_desc_detection">Botón de detección</string>
+    <string name="content_desc_status">Indicador de estado</string>
+    <string name="content_desc_logo">Logo de CashVision</string>
+</resources>

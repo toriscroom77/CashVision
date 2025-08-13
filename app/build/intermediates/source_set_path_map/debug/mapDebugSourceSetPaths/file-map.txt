@@ -1,0 +1,40 @@
+com.example.cashvision.app-resValues-0 C:\Android\CashVision\app\build\generated\res\resValues\debug
+com.example.cashvision.app-packageDebugResources-1 C:\Android\CashVision\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.cashvision.app-packageDebugResources-2 C:\Android\CashVision\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.cashvision.app-debug-3 C:\Android\CashVision\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.cashvision.app-debug-4 C:\Android\CashVision\app\src\debug\res
+com.example.cashvision.app-main-5 C:\Android\CashVision\app\src\main\res
+com.example.cashvision.app-lifecycle-viewmodel-savedstate-2.8.4-6 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\00740594f35b27a6aef63e4335702e1e\transformed\lifecycle-viewmodel-savedstate-2.8.4\res
+com.example.cashvision.app-annotation-experimental-1.4.0-7 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\019635497077db0f37603b67fd5b5753\transformed\annotation-experimental-1.4.0\res
+com.example.cashvision.app-lifecycle-livedata-2.8.4-8 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\0a19286920cc8ce2ab1e53accbad86f7\transformed\lifecycle-livedata-2.8.4\res
+com.example.cashvision.app-fragment-1.5.4-9 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\1b15746a9fe45ff1d56ff527eb1dcba7\transformed\fragment-1.5.4\res
+com.example.cashvision.app-lifecycle-runtime-release-10 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\1c12f9a87ed34c796ac910b43f2ef873\transformed\lifecycle-runtime-release\res
+com.example.cashvision.app-drawerlayout-1.1.1-11 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\2929028251db23429c92ab6a3858164c\transformed\drawerlayout-1.1.1\res
+com.example.cashvision.app-camera-camera2-1.3.4-12 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\2a35bcc8d9b0e808bf3c5f2347c825df\transformed\camera-camera2-1.3.4\res
+com.example.cashvision.app-core-1.13.0-13 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\2db04dd09e2cfedf48119f66c288a615\transformed\core-1.13.0\res
+com.example.cashvision.app-camera-core-1.3.4-14 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\305d58f46cdd147e2af768a0674bdf50\transformed\camera-core-1.3.4\res
+com.example.cashvision.app-emoji2-views-helper-1.3.0-15 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\3402e82b3a6df5d56960e86c2313c936\transformed\emoji2-views-helper-1.3.0\res
+com.example.cashvision.app-lifecycle-runtime-ktx-release-16 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\37ac41bb621dc19d2d42957f4617b309\transformed\lifecycle-runtime-ktx-release\res
+com.example.cashvision.app-lifecycle-process-2.8.4-17 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\4b0d41447cef0f35cc05fcbbf72422d9\transformed\lifecycle-process-2.8.4\res
+com.example.cashvision.app-camera-video-1.3.4-18 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\5f6e116681432de7089f315cfd32247f\transformed\camera-video-1.3.4\res
+com.example.cashvision.app-recyclerview-1.1.0-19 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\6228a0ed483200d315a66a268e645fb8\transformed\recyclerview-1.1.0\res
+com.example.cashvision.app-material-1.12.0-20 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\67cd1faf1a42aad984e0a4c16ca7b0c7\transformed\material-1.12.0\res
+com.example.cashvision.app-constraintlayout-2.1.4-21 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\6dc1f6bc630f9b499e613c91a633ea79\transformed\constraintlayout-2.1.4\res
+com.example.cashvision.app-core-ktx-1.13.0-22 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\72487e322b66615e74a9e9496ffeb891\transformed\core-ktx-1.13.0\res
+com.example.cashvision.app-transition-1.5.0-23 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\7792712f4ce4ccdecddf9c42c62dafb1\transformed\transition-1.5.0\res
+com.example.cashvision.app-appcompat-1.7.0-24 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\79b5c59faf69794efabbc75a1c096c6f\transformed\appcompat-1.7.0\res
+com.example.cashvision.app-cardview-1.0.0-25 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\8020bb6d66ec256923eab72ac3681af5\transformed\cardview-1.0.0\res
+com.example.cashvision.app-activity-1.8.0-26 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\8f4ee0a86fbb337f7fad71d7ab51672a\transformed\activity-1.8.0\res
+com.example.cashvision.app-viewpager2-1.0.0-27 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\8f76b9be3b28a06dbbc1158b2b48e2d7\transformed\viewpager2-1.0.0\res
+com.example.cashvision.app-savedstate-1.2.1-28 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\90d160531169f96b6b59567542e686ea\transformed\savedstate-1.2.1\res
+com.example.cashvision.app-coordinatorlayout-1.1.0-29 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\9214419b4e55634359ba9050258de7fa\transformed\coordinatorlayout-1.1.0\res
+com.example.cashvision.app-appcompat-resources-1.7.0-30 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\958566480ccd7ff93a8269c362c91efc\transformed\appcompat-resources-1.7.0\res
+com.example.cashvision.app-emoji2-1.3.0-31 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\9bff40f9308c4a0ee4404c02e91a924b\transformed\emoji2-1.3.0\res
+com.example.cashvision.app-core-runtime-2.2.0-32 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\9dfde01d1ecf692ba9a3d0f7a8d1a66c\transformed\core-runtime-2.2.0\res
+com.example.cashvision.app-camera-lifecycle-1.3.4-33 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\b52e348e0bd416f4b07f76ad4a8f3778\transformed\camera-lifecycle-1.3.4\res
+com.example.cashvision.app-lifecycle-livedata-core-2.8.4-34 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\c81d0d5b427b99195958d55d86edff02\transformed\lifecycle-livedata-core-2.8.4\res
+com.example.cashvision.app-lifecycle-livedata-core-ktx-2.8.4-35 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\d0aef82e315a8bbe8be76f937fd0a00b\transformed\lifecycle-livedata-core-ktx-2.8.4\res
+com.example.cashvision.app-startup-runtime-1.1.1-36 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\ed941a92fc45a3a38b683c09be288db1\transformed\startup-runtime-1.1.1\res
+com.example.cashvision.app-camera-view-1.3.4-37 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\ef3ff10409cf94e1eceffc950ddd95c1\transformed\camera-view-1.3.4\res
+com.example.cashvision.app-profileinstaller-1.3.1-38 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\f1a336612924a0a677e6c6c93aa96c5c\transformed\profileinstaller-1.3.1\res
+com.example.cashvision.app-lifecycle-viewmodel-release-39 C:\Users\Matías Tori Soto\.gradle\caches\9.0-milestone-1\transforms\f926aff0887b6b94c326475969158bec\transformed\lifecycle-viewmodel-release\res

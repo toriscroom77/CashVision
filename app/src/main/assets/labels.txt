@@ -1,0 +1,6 @@
+billete_1000
+billete_2000
+billete_5000
+billete_10000
+billete_20000
+billete_50000

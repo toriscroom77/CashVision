@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_flashlight_selector.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/flashlight_selector.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/anim_button_release.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/anim/button_release.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_button_background.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/button_background.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_gradient_background.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/gradient_background.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_ic_detection.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/ic_detection.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_camera_overlay.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/camera_overlay.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_ic_flashlight_off.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/ic_flashlight_off.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/anim_button_press.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/anim/button_press.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_status_indicator.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/status_indicator.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_ic_flashlight_on.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/ic_flashlight_on.xml"
+    },
+    {
+        "merged": "com.example.cashvision.app-debug-4:/drawable_ic_cashvision_logo.xml.flat",
+        "source": "com.example.cashvision.app-main-6:/drawable/ic_cashvision_logo.xml"
+    }
+]

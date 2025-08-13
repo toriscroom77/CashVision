@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_gold">#FFC107</color>
+    <color name="accent_gold_dark">#FF8F00</color>
+    <color name="background_card">#2D2D2D</color>
+    <color name="background_dark">#121212</color>
+    <color name="background_surface">#1E1E1E</color>
+    <color name="black_overlay">#80000000</color>
+    <color name="button_primary">#4CAF50</color>
+    <color name="button_primary_pressed">#2E7D32</color>
+    <color name="button_surface">#2D2D2D</color>
+    <color name="error">#F44336</color>
+    <color name="primary_green">#2E7D32</color>
+    <color name="primary_green_dark">#1B5E20</color>
+    <color name="primary_green_light">#4CAF50</color>
+    <color name="success">#4CAF50</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    <color name="warning">#FF9800</color>
+    <color name="white_overlay">#80FFFFFF</color>
+    <dimen name="button_corner_radius">28dp</dimen>
+    <dimen name="button_elevation">8dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <string name="app_name">CashVision</string>
+    <string name="btn_detection">Detectar</string>
+    <string name="btn_detection_off">Parar</string>
+    <string name="btn_flashlight">Linterna</string>
+    <string name="btn_flashlight_off">Apagar</string>
+    <string name="content_desc_detection">Botón de detección</string>
+    <string name="content_desc_flashlight">Botón de linterna</string>
+    <string name="content_desc_logo">Logo de CashVision</string>
+    <string name="content_desc_status">Indicador de estado</string>
+    <string name="status_camera_error">Error al inicializar la cámara</string>
+    <string name="status_camera_ready">Cámara lista - Toca Detectar para iniciar</string>
+    <string name="status_detecting">Detectando billetes...</string>
+    <string name="status_detection_off">Detección pausada</string>
+    <string name="status_detection_on">Detección activa</string>
+    <string name="status_flashlight_off">Linterna apagada</string>
+    <string name="status_flashlight_on">Linterna encendida</string>
+    <string name="status_model_error">Error al cargar modelo</string>
+    <string name="status_model_loading">Cargando modelo YOLO...</string>
+    <string name="status_no_flashlight">Este dispositivo no tiene linterna</string>
+    <string name="status_tap_flashlight">Toca para encender la linterna</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/primary_green_dark</item>
+        <item name="colorAccent">@color/accent_gold</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/background_surface</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="CashVisionButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/button_primary</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="rippleColor">@color/white_overlay</item>
+    </style>
+    <style name="CashVisionCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/background_card</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+    <style name="FlashButton" parent="CashVisionButton">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
