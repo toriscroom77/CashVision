@@ -120,16 +120,37 @@
 
         </LinearLayout>
 
-        <!-- Status Text -->
-        <TextView
-            android:id="@+id/statusText"
+        <!-- Status Container -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/status_tap_flashlight"
-            android:textColor="@color/text_secondary"
-            android:textSize="@dimen/text_size_medium"
-            android:gravity="center"
-            android:fontFamily="sans-serif" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/status_tap_flashlight"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_size_medium"
+                android:gravity="center"
+                android:fontFamily="sans-serif" />
+
+            <Button
+                android:id="@+id/btnCorrect"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_correct"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/content_desc_correct" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
