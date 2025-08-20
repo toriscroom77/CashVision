@@ -61,6 +61,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Ktor for networking
+    def ktor_version = "2.3.12"
+    implementation "io.ktor:ktor-client-core:$ktor_version"
+    implementation "io.ktor:ktor-client-cio:$ktor_version"
 }
 
 // 🔵 Toolchain para que Kotlin use JDK 17 sí o sí
