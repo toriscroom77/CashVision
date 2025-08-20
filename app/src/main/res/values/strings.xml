@@ -25,4 +25,6 @@
     <string name="content_desc_detection">Botón de detección</string>
     <string name="content_desc_status">Indicador de estado</string>
     <string name="content_desc_logo">Logo de CashVision</string>
+    <string name="btn_correct">Corregir</string>
+    <string name="content_desc_correct">Botón para corregir la detección</string>
 </resources>
