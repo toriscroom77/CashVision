@@ -6,9 +6,12 @@ import android.os.Bundle
 import android.util.Size
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import android.view.View
 import android.view.animation.AnimationUtils
+import android.graphics.Bitmap
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
@@ -19,13 +22,20 @@ import com.example.cashvision.camera.ImageAnalyzer
 import com.example.cashvision.ml.Detection
 import com.example.cashvision.ml.YoloDetector
 import com.example.cashvision.ui.DetectionOverlay
+import io.ktor.client.*
+import io.ktor.client.engine.cio.*
+import io.ktor.client.request.*
+import io.ktor.client.request.forms.*
+import io.ktor.http.*
 import kotlinx.coroutines.launch
+import java.io.ByteArrayOutputStream
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var previewView: PreviewView
     private lateinit var btnFlash: Button
     private lateinit var btnDetection: Button
+    private lateinit var btnCorrect: Button
     private lateinit var statusText: TextView
     private lateinit var statusIndicator: View
     private lateinit var detectionOverlay: DetectionOverlay
@@ -36,6 +46,10 @@ class MainActivity : AppCompatActivity() {
 
     private var isFlashOn = false
     private var isDetectionActive = false
+
+    private val httpClient by lazy {
+        HttpClient(CIO)
+    }
 
     private val permissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
@@ -57,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         previewView = findViewById(R.id.previewView)
         btnFlash = findViewById(R.id.btnFlash)
         btnDetection = findViewById(R.id.btnDetection)
+        btnCorrect = findViewById(R.id.btnCorrect)
         statusText = findViewById(R.id.statusText)
         statusIndicator = findViewById(R.id.statusIndicator)
         detectionOverlay = findViewById(R.id.detectionOverlay)
@@ -96,6 +111,10 @@ class MainActivity : AppCompatActivity() {
         btnDetection.setOnClickListener {
             animateButtonPress(btnDetection)
             toggleDetection()
+        }
+
+        btnCorrect.setOnClickListener {
+            handleCorrection()
         }
     }
 
@@ -230,10 +249,14 @@ class MainActivity : AppCompatActivity() {
             if (detectionsToShow.isNotEmpty()) {
                 val bestDetection = detectionsToShow.first()
                 statusText.text = "Detectado: ${bestDetection.getFormattedDenomination()} (${(bestDetection.confidence * 100).toInt()}%)"
+                btnCorrect.visibility = View.VISIBLE
                 Log.d("MainActivity", "Showing detection: ${bestDetection.className} with ${(bestDetection.confidence * 100).toInt()}%")
             } else {
                 statusText.text = getString(R.string.status_detecting)
+                btnCorrect.visibility = View.GONE
             }
+        } else {
+            btnCorrect.visibility = View.GONE
         }
     }
 
@@ -255,6 +278,64 @@ class MainActivity : AppCompatActivity() {
             )
 
             detection.copy(bbox = scaledBbox)
+        }
+    }
+    
+        private fun handleCorrection() {
+            val imageBitmap = previewView.bitmap
+            if (imageBitmap == null) {
+                Log.e("MainActivity", "No se pudo obtener el bitmap de la vista previa.")
+                return
+            }
+    
+            // Guardar la imagen y mostrar el diálogo de selección
+            Log.d("MainActivity", "Bitmap capturado con éxito. Mostrando diálogo de corrección.")
+            showCorrectionDialog(imageBitmap)
+        }
+    
+        private fun showCorrectionDialog(image: Bitmap) {
+            val denominations = arrayOf("1000 Pesos", "2000 Pesos", "5000 Pesos", "10000 Pesos", "20000 Pesos") // Idealmente, esto vendría de una fuente de datos
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Selecciona la denominación correcta")
+            builder.setItems(denominations) { dialog, which ->
+                val selectedDenomination = denominations[which]
+                Log.d("MainActivity", "Corrección: El usuario seleccionó '$selectedDenomination'")
+    
+                uploadCorrection(image, selectedDenomination)
+                dialog.dismiss()
+            }
+            builder.setNegativeButton("Cancelar") { dialog, _ ->
+                dialog.dismiss()
+            }
+            builder.create().show()
+        }
+
+    private fun uploadCorrection(image: Bitmap, label: String) {
+        lifecycleScope.launch {
+            val stream = ByteArrayOutputStream()
+            image.compress(Bitmap.CompressFormat.JPEG, 90, stream)
+            val byteArray = stream.toByteArray()
+
+            try {
+                httpClient.post("https://cashvision-backend.free.beeceptor.com/correct") {
+                    setBody(MultiPartFormDataContent(
+                        formData {
+                            append("label", label)
+                            append("image", byteArray, Headers.build {
+                                append(HttpHeaders.ContentType, "image/jpeg")
+                                append(HttpHeaders.ContentDisposition, "filename=\"correction.jpg\"")
+                            })
+                        }
+                    ))
+                }
+                Log.d("MainActivity", "Corrección enviada al servidor para: $label")
+                Toast.makeText(this@MainActivity, "Corrección enviada", Toast.LENGTH_SHORT).show()
+
+            } catch (e: Exception) {
+                Log.e("MainActivity", "Error al enviar la corrección", e)
+                Toast.makeText(this@MainActivity, "Error de red", Toast.LENGTH_SHORT).show()
+                e.printStackTrace()
+            }
         }
     }
 
@@ -282,5 +363,6 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         yoloDetector?.close()
+        httpClient.close()
     }
 }
